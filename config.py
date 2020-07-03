@@ -25,11 +25,13 @@ class Config:
     # FIXME: Change path of training data.
     data_dir = './data'
     train_data_path = f'{data_dir}/train_data.txt'
-    pickle_path = f'{data_dir}/train_data.pkl'
+    #pickle_path = f'{data_dir}/train_data.pkl'
+    pickle_path = f'{data_dir}/train_data_small.pkl'  ### ← これで、既存のTrainデータを利用
     fn = 'ckpt'
 
     load = False
     # FIXME: if you use original data, change flag of this
-    use_pickle = True
+    #use_pickle = True
+    use_pickle = False                                ### ← これで、既存のTrainデータを利用
 
     model_name = 'cl-tohoku/bert-base-japanese-whole-word-masking'
