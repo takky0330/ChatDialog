@@ -7,12 +7,11 @@ from utils import evaluate
 
 if __name__ == '__main__':
 
-    print(Config)
     device = torch.device(Config.device)
     if torch.cuda.is_available() == False:  ## ここを追加
         device = 'cpu'                      ## ここを追加
-    ｐｒｉｎｔ(device)
-    
+    print(device)
+
     state_dict = torch.load(f'{Config.data_dir}/{Config.fn}.pth')
 
     tokenizer = Tokenizer.from_pretrained(Config.model_name)
