@@ -3,8 +3,8 @@ class Config:
     device = 'cuda'
 
     n_epoch = 3
-    #batch_size = 64   ###
-    batch_size = 32
+    #batch_size = 64   ### 「CUDA out of memory. Tried to allocate…」となり
+    batch_size = 48    ### batch_size を32に落として、クリア！
 
     max_len = 22
     lr = 1e-3
