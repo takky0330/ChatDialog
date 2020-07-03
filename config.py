@@ -32,6 +32,5 @@ class Config:
     load = False
     # FIXME: if you use original data, change flag of this
     use_pickle = True
-    #use_pickle = False                                ### ← これで、既存のTrainデータを利用
 
     model_name = 'cl-tohoku/bert-base-japanese-whole-word-masking'
