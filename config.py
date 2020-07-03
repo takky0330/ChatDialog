@@ -3,7 +3,9 @@ class Config:
     device = 'cuda'
 
     n_epoch = 3
-    batch_size = 64
+    #batch_size = 64   ###
+    batch_size = 32
+
     max_len = 22
     lr = 1e-3
     betas = (0.9, 0.98)
