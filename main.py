@@ -25,6 +25,7 @@ if __name__ == '__main__':
     device = torch.device(Config.device)
     if torch.cuda.is_available() == False:  ## ここを追加
         device = 'cpu'                      ## ここを追加
+    print(f'batch_size = {Config.batch_size}')
 
     start_epoch = 0
     tokenizer = Tokenizer.from_pretrained(Config.model_name)
