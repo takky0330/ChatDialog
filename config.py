@@ -27,7 +27,7 @@ class Config:
     train_data_path = f'{data_dir}/train_data.txt'
     #pickle_path = f'{data_dir}/train_data.pkl'
     pickle_path = f'{data_dir}/train_data_small.pkl'  ### ← これで、既存のTrainデータを利用
-    fn = 'ckpt_Xsmall'
+    fn = 'ckpt_small'
 
     load = False
     # FIXME: if you use original data, change flag of this
