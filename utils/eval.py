@@ -5,6 +5,8 @@ from .helper import subsequent_mask
 
 def evaluate(config, input_seq, tokenizer, model, device, verbose=True):
     model.eval()
+    print(input_seq)
+
     ids = tokenizer.encode(input_seq)
     src = torch.tensor(ids, dtype=torch.long, device=device).view(1, -1)
     src_mask = torch.ones(src.size(), dtype=torch.long, device=device)
