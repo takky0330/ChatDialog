@@ -26,8 +26,8 @@ class Config:
     data_dir = './data'
     train_data_path = f'{data_dir}/train_data.txt'
     #pickle_path = f'{data_dir}/train_data.pkl'
-    pickle_path = f'{data_dir}/train_data_large.pkl'  ### ← これで、既存のTrainデータを利用
-    fn = 'ckpt_large_gpu'
+    pickle_path = f'{data_dir}/train_data.pkl'  ### ← これで、既存のTrainデータを利用
+    fn = 'ckpt'
 
     load = False
     # FIXME: if you use original data, change flag of this
